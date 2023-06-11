@@ -1,0 +1,22 @@
+h1 {
+    text-align: center;
+}
+
+form {
+    margin: 10px auto;
+    width: 500px;
+}
+
+input {
+    display: block;
+    height: 30px;
+    width: 100%;
+    margin: 10px auto;
+    padding: 3px;
+    border-radius: 12px;
+    border-color: rgb(119, 118, 118);
+}
+
+p {
+    margin: 5px;
+}
