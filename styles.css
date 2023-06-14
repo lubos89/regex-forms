@@ -19,7 +19,7 @@ h1 {
     align-items: center;
     width: 400px;
     height: 500px;
-    background-color: rgba(223, 227, 226, 0.927);
+    background-color: rgba(239, 243, 242, 0.903);
     border-radius: 15px;
 }
 
@@ -46,7 +46,9 @@ input.valid {
 }
 
 input.invalid {
-    border-color: orange;
+    border-color: red;
+    animation: shake 0.2s ease-in-out 0s 2;
+    box-shadow: 0 0 0.5em red;
 }
 
 input + p {
@@ -54,7 +56,7 @@ input + p {
     font-size: 12px;
     font-weight: bold;
     text-align: center;
-    color: orange;
+    color: rgb(255, 0, 0);
     opacity: 0;
     height: 0;
 }
@@ -68,7 +70,7 @@ input.invalid + p {
 button {
     padding: 10px 30px;
     margin-top: 20px;
-    background-color: rgba(19, 119, 54, 0.851);
+    background-color: rgb(27, 172, 124);
     border: 0px solid;
     border-radius: 12px;
     font-size: 16px;
@@ -83,3 +85,10 @@ color: white;
 a:hover {
     color: black;
 }
+
+@keyframes shake {
+    0% { margin-left: 0rem; }
+    25% { margin-left: 0.5rem; }
+    75% { margin-left: -0.5rem; }
+    100% { margin-left: 0rem; }
+  }
